@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tailwind</title>
+
+	<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="font-poppins">
+	<h1 class="container mx-auto">Hello world</h1>
+	<span class="bg-green-500 hidden">Hello Inline</span>
+	<div class="w-[300px] h-[300px] bg-green-400">
+		<img class="w-full h-full object-cover"  src="https://images.pexels.com/photos/27362362/pexels-photo-27362362/free-photo-of-a-table-with-food-on-it.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+	</div>
+
+	<div class="w-[300px] h-[300px] bg-green-400">
+		<p class="p-10 m-10">1</p>
+	</div>
+	<!-- relative -->
+
+	<div class="w-[300px] h-[300px] bg-green-400 relative z-[]">
+		1
+	</div>
+	<div class="w-[50px] h-[50px] bg-red-500 top-0 absolute right-0">2</div>
+
+	<div class="relative bg mb-10"></div>
+
+	<!-- flex  -->
+	 <div class="flex justify-between">
+		<div class="bg-green-400">1</div>
+		<div class="bg-red-500">2</div>
+	 </div>
+
+	 <nav class="flex justify-between items-center bg-slate-100">
+		<a href="#">Logo</a>
+		<ul class="flex justify-between items-center gap-5">
+			<li>Home</li>
+			<li>About</li>
+			<li>Contact</li>
+			<li>Sign up</li>
+		</ul>
+	 </nav>
+
+	 <div class="flex justify-between font-bold text-xl flex-col">
+		<div class="order-last">1</div>
+		<div>2</div>
+		<div class="order-first">3</div>
+	 </div>
+
+	 <!-- grid  -->
+	  <div class="grid grid-cols-3 gap-5">
+		<div class="bg-slate-600">
+			<h2>Card 01</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tenetur laudantium sapiente sunt asperiores iure perspiciatis odio ex autem quas.</p>
+		  </div>
+		<div class="bg-slate-600">
+			<h2>Card 01</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tenetur laudantium sapiente sunt asperiores iure perspiciatis odio ex autem quas.</p>
+		  </div>
+		<div class="bg-slate-600">
+			<h2>Card 01</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tenetur laudantium sapiente sunt asperiores iure perspiciatis odio ex autem quas.</p>
+		  </div>
+		<div class="bg-slate-600">
+			<h2>Card 01</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tenetur laudantium sapiente sunt asperiores iure perspiciatis odio ex autem quas.</p>
+		  </div>
+	  </div>
+
+	  <div class="grid ">
+		<div></div>
+		<div></div>
+	  </div>
+
+	  <!-- padding  -->
+	   <div class="bg-red-500 px-10 pl-10 ps-0 pr-10 pe-10 pt-10 pb-10">
+		Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+	   </div>
+	   <!-- margin  -->
+	   <div class="bg-red-500 mx-10 container ">
+		Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+	   </div>
+
+	   <div class="flex space-x-4">
+		<div class="bg-red-200">1</div>
+		<div class="bg-red-200">2</div>
+		<div class="bg-red-200">3</div>
+	   </div>
+
+	   <div class="w-1/2 bg-black mx-auto mb-10">
+		Lorem ipsum dolor sit amet.
+	   </div>
+	   
+	   <div class="w-11/12 bg-black mx-auto gap-5 text-white container text-green-500/40">
+		<div class="h-28 p-10">
+			<h2>lorem5 </h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quae! Minus accusamus quasi placeat quo laboriosam illum mollitia illo magni.</p>
+		</div>
+		<div class="h-28 p-10">
+			<h2>lorem5 </h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quae! Minus accusamus quasi placeat quo laboriosam illum mollitia illo magni.</p>
+		</div>
+		<div class="h-28 p-10">
+			<h2>lorem5 </h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quae! Minus accusamus quasi placeat quo laboriosam illum mollitia illo magni.</p>
+		</div>
+		<div class="h-28 p-10">
+			<h2>lorem5 </h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quae! Minus accusamus quasi placeat quo laboriosam illum mollitia illo magni.</p>
+		</div>
+	   </div>
+
+	   <div class="bg-gradient-to-r from-cyan-500 to-blue-500">
+		<img class="object-cover" src="https://images.pexels.com/photos/4110510/pexels-photo-4110510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+	   </div>
+
+</body>
+</html>
